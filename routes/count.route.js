@@ -27,7 +27,7 @@ countRouter.post('/api/wordcount', (req, res) => {
         // Save the count data to the database
         count.save()
           .then(savedCount => {
-            res.json({ wordcount: savedCount.wordCount });
+            res.json({ wordCount: savedCount.wordCount });
           })
           .catch(error => {
             console.error(error);
